@@ -1,0 +1,154 @@
+<html>
+    <head>
+    <title>Membuat Image Slider Dengan JQuery</title>
+    <meta name="description" content="Sederhana dan sangat powerfull:Slide slider">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!--Instalasi font lato dari google, abaikan jika tidak koneksi internet-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!--Include jquery-->
+    <script src="./src/jquery-3.6.0.js"></script>
+    <script src="./src/jquery-migrate-1.2.1.min.js"></script>
+
+    <!--Include the slider script-->
+    <script type="text/javascript" src="./src/jquery.simpleslider.js"></script>
+    <script type="text/javascript" src="./src/backstretch.js"></script>
+    <script type="text/javascript" src="./src/custom.js"></script>
+
+    </head>
+    <body>
+        <header id="top">
+            <div id="logo"><span class='logo'>Slider Menggunakan JQuery</span><span class='dynamic'></span></div>
+        </header>
+
+        <div class="pagewrap">
+            <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v11.0" nonce="LZGFsfdw"></script>
+    
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+
+            <div class="githubbuttons">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/egioyong/notes-app-back-end/subscription" 
+                data-icon="octicon-eye" aria-label="Watch egioyong/notes-app-back-end on GitHub">Watch</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/egioyong/notes-app-back-end/fork" 
+                data-icon="octicon-repo-forked" aria-label="Fork egioyong/notes-app-back-end on GitHub">Fork</a>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/egioyong" aria-label="Follow @egioyong on GitHub">Follow @egioyong</a>
+
+            </div>
+
+            <div class="pageblock" id="fullscreen">
+                <div class="slider">
+                    <div class="slide" id="satu">
+                        <div class="slidecontent">
+                            <span class="headersur">Sangat powerfull dan sederhana diwaktu yang sama</span>
+                            <h1>SLIDE PERTAMA</h1>
+                            <select class="js-example-basic-single" name="state">
+                                <option value="TR">Traveling</option>
+                                <option value="NT">Nonton</option>
+                                <option value="PG">Playing Game</option>
+                                <option value="TD">Tidur</option>
+                                <option value="BC">Makan</option>
+                                <option value="SB">Sepak Bola</option>
+                            </select> 
+                            <div class="button" onclick="mainslider.nexSlide();">Lihat Betapa sederhananya</div>  
+                    </div>
+                </div>
+        
+                    <div class="slide" id="dua">
+                        <div class="slidecontent">
+                            <span class="headersur"></br></br> Masukan Semua disini</span>
+                            <h1>SLIDE KEDUA</h1>
+                            <div class="text">
+                                <p>Siapkan dan download file simpleslider.js, jquery.touchswipe.js,dan transit.js</p>
+                                <xmp>
+                                   <script src="./src/jquery-3.6.0.js"></script>
+                                   <script src="./src/jquery-migrate-1.2.1.min.js"></script>
+                                   <script type="text/javascript" src="./src/transit.js"></script>
+                                   <script type="text/javascript" src="./src/jquery.touchSwipe.js"></script>
+                                   <script type="text/javascript" src="./src/jquery.simpleslider.js"></script>
+                                </xmp>
+                                
+                                <div class="button" onclick="mainslider.nexSlide();">Sudah?Ayo lanjutkan</div>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="slide" id="tiga">
+                        <div class="slidecontent">
+                            <span class="headersur">Sudah Siap?</span>
+                            <h1>Langkah Berikutnya</h1>  
+                            <div class="text">
+                                <p>Masukan kode ini di HTML, cek <a href="https://github.com/egioyong/jquery-plugin"
+                                target="_BLANK">Github README</a>Contoh HTML</p>
+                                <xmp>
+                                    $(document).ready(funtion(){
+                                        $(".slider").simpleslider(;)
+                                    });
+
+                                </xmp>
+                                <div class="button" onclick="mainslider.nexSlide();">Selesai?Lanjutkan lagi!</div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="slide" id="empat">
+                        <div class="slidecontent"> 
+                            <span class="headersur">Belum Selesai</span>  
+                            <h1>LIHAT</h1>
+                            <div class="text">
+                                <p>Slider masih ada lagi</p>
+                                <div class="button" onclick="mainslider.nexSlide();">Cek</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="lima">
+                        <div class="slidecontent">
+                            <span class="headersur">Masih ada lagi !</span>
+                            <h1>SLIDER KELIMA</h1>
+                            <div class="text">
+                                <p>Ayo sekali lagi</p>
+
+                                <div class="button" onclick="mainslider.nexSlide();">
+                                 Lanjut
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class="slide" id="enam">
+                      <div class="slidecontent">
+                          <span class="headersur">Sudah Selesai</span>
+                          <h1>LIHAT</h1>
+                          <div class="text">
+                            <p>Slider Sudah Selesai, Mau lihat opsi lain?</p>
+                            <p>
+                            <p>Ada methods, triggers dan tracker yang dikonfigurasikan</p>
+                            
+                            <div class="button">
+                                <a href="https://github.com/egioyong/jquery-plugin"
+                                target="_BLANK">cek</a></div>
+                          </div>
+                      </div>
+                  </div>  
+                </div>
+            </div>
+
+            <div class="copy">
+                Project: <a href="https://m.facebook.com/baskam321" rel="publisher">Egi Dwi Permana</a>
+                <a href="https://github.com/egioyong">Github : Egi Dwi Permana</a>
+            </div>
+            
+        </div>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+    </body>
+</html>

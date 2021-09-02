@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Typed</title>
+        <style>
+            body{
+                background-image: url("roksolana-zasiadko-aSCihnn25Jc-unsplash.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .typed {
+                margin-left: 30%;
+                margin-top: 20%;
+                font-size: 30px;
+            }
+            .typed .anim {
+                color: rgb(255, 0, 0);
+            }
+            h1{
+                color: chartreuse;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Nama     : Egi Dwi Permana</p>
+        <p>Kelas    : TIF 4D </p>
+        <P>Nim      : 3201916015</P>
+        <div class="typed">
+            <h1>Welcome <span class="anim"></span></h1>
+        </div>
+
+        <script src="typed.js-master/lib/typed.js"></script>
+
+        <script>
+            var typed = new Typed(".anim", {
+                // Waits 1000ms after typing "First"
+                strings: ["Ganteng", "Handsome"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+            });
+        </script>
+    </body>
+</html>
